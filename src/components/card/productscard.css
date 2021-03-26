@@ -1,0 +1,45 @@
+.box {
+  background-color: white;
+  width: 200px;
+  height: 20rem;
+  padding: 2rem 2rem 1rem;
+  margin: 2rem 5rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.box img {
+  width: 10rem;
+  height: 15rem;
+  transition: all 0.3s linear;
+}
+
+.fa-cart {
+  margin-left: 12rem;
+  padding: 5px 12px;
+  font-size: large;
+  background-color: #93c5fd;
+  border: none;
+  border-radius: 2px;
+  transform: translate(100%, 100%);
+  transition: all 0.3s linear;
+}
+
+.box:hover {
+  box-shadow: 2px 2px 3px 3px #ccc;
+}
+
+.box:hover .fa-cart {
+  transform: translate(0, 0);
+}
+.fa-cart:hover {
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
+
+@media (max-width: 380px) {
+  .box {
+    margin: 2rem 4rem;
+  }
+}

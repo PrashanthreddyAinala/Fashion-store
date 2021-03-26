@@ -1,0 +1,34 @@
+.Navbar {
+  background-color: var(--dark-red);
+  padding: 0.5rem;
+  display: flex;
+}
+
+.link1 {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.link2 {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 1px;
+}
+.link2 p {
+  margin: 1px;
+  padding: 10px;
+  border: 2px solid var(--light-red);
+  color: var(--light-red);
+  border-radius: 5px;
+  background-color: var(--dark-red);
+}
+
+.link2 p:hover {
+  color: var(--hover-red);
+  border: 2px solid var(--hover-red);
+}
+
+.cart {
+  position: absolute;
+  right: 1rem;
+}

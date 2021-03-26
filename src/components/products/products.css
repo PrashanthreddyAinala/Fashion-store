@@ -1,0 +1,9 @@
+.padd {
+  padding: 2rem;
+}
+
+.products h1 {
+  text-align: center;
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: bold;
+}

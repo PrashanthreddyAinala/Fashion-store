@@ -1,0 +1,81 @@
+.cart-header {
+  text-align: center;
+  padding: 2rem;
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: bold;
+}
+
+.cart-body {
+  display: flex;
+}
+
+.cart-body h3 {
+  padding-left: 9rem;
+  width: 10rem;
+  justify-content: center;
+}
+
+.cart-body button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.cart-body .delete {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.cart-body .delete:hover {
+  background-color: var(--light-red);
+}
+
+.cart-body h2 {
+  padding-left: 9rem;
+  padding-bottom: 2rem;
+  width: 10rem;
+  justify-content: center;
+}
+
+/* cart total */
+
+.cart-total {
+  position: absolute;
+  right: 8rem;
+}
+
+.cart-total .amount {
+  padding-left: 2rem;
+}
+
+.cart-total button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 5px;
+}
+
+.cart-total button:hover {
+  background-color: var(--light-red);
+}
+
+/* small screen */
+@media (max-width: 900px) {
+  .cart-body {
+    display: grid;
+  }
+
+  .cart-body h2 {
+    display: none;
+  }
+
+  .cart-total {
+    padding-top: 2rem;
+    padding-left: 7rem;
+  }
+
+  .cart-total .amount {
+    padding-left: 0rem;
+  }
+}
