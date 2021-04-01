@@ -1,23 +1,19 @@
-.detail-header h1 {
-  text-align: center;
-  margin-top: 5rem;
-}
-
-.element {
-  display: inline-block;
-  width: 45%;
-  margin-top: 5rem;
-}
-
 .element img {
-  padding-left: 25rem;
   padding-right: 2rem;
   height: 350px;
   width: 250px;
 }
+.element h2 {
+  padding-bottom: 1rem;
+}
 
 .element p {
   font-size: 1.4rem;
+  padding-top: 3px;
+}
+
+.element button {
+  margin-top: 1rem;
 }
 
 .primary {
@@ -48,18 +44,11 @@
 }
 
 /* small screen */
-@media (max-width: 700px) {
-  .element {
-    display: grid;
-    grid-template-rows: none;
-    padding: 2rem;
-    width: 70%;
-  }
-
+@media (max-width: 600px) {
   .element img {
     padding-left: 3rem;
-    height: 350px;
-    width: 200px;
+    height: 280px;
+    margin-bottom: 2rem;
   }
   .primary {
     padding: 1rem;

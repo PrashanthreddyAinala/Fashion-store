@@ -7,7 +7,7 @@ class CartData extends React.Component {
         return (
             <ProductConsumer>
                 {value=>(
-                    <div className="cart-body">
+                    <div className="row data-padd text-center">
                         <h3><img src={img} alt="phone" /></h3>
                         <h3>{name}</h3>
                         <h3>Rs. {price}</h3>

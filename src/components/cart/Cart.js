@@ -12,13 +12,17 @@ class Cart extends React.Component{
                     const {Cart} = value;
                     if(Cart.length>0) {
                         return (
-                            <div>
+                            <div className="container">
                                 <CartList value={value}/>
                                 <CartTotal value={value} />
                             </div>
                             )
                     } else {
-                        return (<h1 className="cart-header">Your Cart is empty</h1>)
+                        return (
+                        <div className="container text-center pt-5">
+                            <h1 className="cart-header">Your Cart is empty</h1>
+                        </div>
+                        )
                     }
                 }}
             </ProductConsumer>

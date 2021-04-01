@@ -1,9 +1,44 @@
-.padd {
-  padding: 2rem;
-}
-
 .products h1 {
-  text-align: center;
   font-family: "Averia Serif Libre", cursive;
   font-weight: bold;
+}
+
+.card img {
+  width: 10rem;
+  height: 15rem;
+  transition: all 0.3s linear;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 3px 3px #ccc;
+}
+
+.fa-cart {
+  margin-left: 12.1rem;
+  padding: 5px 12px;
+  font-size: large;
+  background-color: #93c5fd;
+  border: none;
+  border-radius: 2px;
+  transform: translate(100%, 100%);
+  transition: all 0.3s linear;
+}
+
+.card:hover .fa-cart {
+  transform: translate(0, 0);
+}
+
+.card {
+  overflow: hidden;
+}
+
+.fa-cart:hover {
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .fa-cart {
+    margin-left: 11.1rem;
+  }
 }

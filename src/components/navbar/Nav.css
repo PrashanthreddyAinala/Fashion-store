@@ -1,19 +1,12 @@
-.Navbar {
-  background-color: var(--dark-red);
-  padding: 0.5rem;
-  display: flex;
-}
-
 .link1 {
-  text-decoration: none;
   color: var(--white);
 }
 
 .link2 {
-  text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 1px;
 }
+
 .link2 p {
   margin: 1px;
   padding: 10px;
@@ -31,4 +24,13 @@
 .cart {
   position: absolute;
   right: 1rem;
+}
+
+.link1:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.link2:hover {
+  text-decoration: none;
 }

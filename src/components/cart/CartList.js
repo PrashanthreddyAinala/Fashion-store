@@ -6,8 +6,10 @@ class CartList extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1 className="cart-header">Your Cart Items</h1>
-                <div className="cart-body">
+                <div className="pt-5 pb-5 text-center">
+                    <h1 className="cart-header">Your Cart Items</h1>
+                </div>
+                <div className="row data-padd mb-5">
                     <h2>Products</h2>
                     <h2>Name</h2>
                     <h2>Price</h2>

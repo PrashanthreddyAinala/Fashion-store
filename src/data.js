@@ -12,7 +12,7 @@ const Data=[
     },
     {
         id: 2,
-        name: "Galaxy Note10 Lite",
+        name: "Galaxy Note10",
         img: "/img/samsung.jpg",
         inCart: false,
         desc: "12MP Ultra wide (123°) FF + F2.2  Wide (77°) 12MP AF F1.7 Dual Pixel + Tele (45°) 12MP AF F2.4 OIS, 2x Zoom camera | 32MP front facing camera 17.04 centimeters (6.7-inch) super Amoled infinity-O display and FHD+ capacitive multi-touch touchscreen with 2400 x 1080 pixels resolution | 16M color support Memory, Storage & SIM: 6GB RAM | 128GB internal memory expandable up to 1TB | Dual SIM dual-standby (4G+4G)",
@@ -32,7 +32,7 @@ const Data=[
     },
     {
         id: 4,
-        name: "OPPO F19 Pro+",
+        name: "OPPO F19",
         img: "/img/oppo.jpg",
         inCart: false,
         desc: "6.43 Inch (16.3cm) FHD+ Super AMOLED Punch-hole Display with 2400x1080 pixels. Larger screen to body ratio of 90.8%.|In-Display Fingerprint 3.0 Mediatek Dimensity 800U 5G supports Dual 5G or 4G sim.| Powerful 2.4 GHz Octa-core processor, support LPDDR4X memory and latest UFS 2.1 storage 48MP Quad Camera ( 48MP Main + 8MP Wide Angle Macro + 2MP Portrait Mono Lens + 2MP Macro Mono Lens) | 16MP Front Camera. 12MP TrueDepth front camera with Portrait Mode, 4K video, and Slo-Mo Face ID for secure authentication A13 Bionic chip with third-generation Neural Engine",
@@ -42,7 +42,7 @@ const Data=[
     },
     {
         id: 5,
-        name : "iPhone 11 Pro Max",
+        name : "iPhone 11 Pro",
         img: "/img/apple.png",
         inCart: false,
         desc: "6.5-inch (16.5 cm diagonal) Super Retina XDR OLED display Water and dust resistant (4 meters for up to 30 minutes, IP68) Triple-camera system with 12MP Ultra Wide, Wide, and Telephoto cameras; Night mode, Portrait mode, and 4K video up to 60fps",
@@ -52,7 +52,7 @@ const Data=[
     },
     {
         id: 6,
-        name: "Note 9 Pro Max",
+        name: "Note 9 Pro",
         img: "/img/redmi.jpg",
         inCart: false,
         desc: "64MP quad rear camera with ultra-wide, macro mode, super macro, portrait, night mode, 960fps slowmotion, ai scene recognition, pro color, HDR, pro mode | 32MP front camera 16.9418 centimeters (6.67-inch) FHD+ LCD full screen dot display multi-touch capacitive touchscreen with 2400 x 1080 pixels resolution, 400 ppi pixel density and 20:9 aspect ratio | 2.5D curved glass Android v10 operating system with 2.3GHz Qualcomm Snapdragon 720G with 8nm octa core processor",

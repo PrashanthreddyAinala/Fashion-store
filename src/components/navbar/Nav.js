@@ -6,10 +6,10 @@ import "./Nav.css";
 class NavBar extends React.Component{
     render() {
         return (
-            <div className="Navbar">
-                <div    >
+            <div className="navbar bg-danger p-3">
+                <div>
                     <NavLink to="/" className="link1">
-                        <h1>Mobile Store</h1>
+                        <h3>Mobile Store</h3>
                     </NavLink>
                 </div>
                 <div className="cart">
