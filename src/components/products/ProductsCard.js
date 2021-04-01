@@ -5,24 +5,27 @@ import "./products.css"
 
 class ProductsCard extends React.Component{
     render() {
-        const {id,img, name, inCart} = this.props.product
+        const {id,img, name, inCart, short, price} = this.props.product
         return (
-            <div className="col-10 col-lg-3 col-sm-5 mx-auto mb-4">
+            <div className="col-lg-3 col-md-4 col-6 mx-auto mb-4">
                 <div className="card">
                     <ProductConsumer>
                         {value=>(
                             <div>
-                                <div className="card-body">
+                                {/* <div className="card-body"> */}
                                     <Link to="/details">
                                         <img src={img} alt="phone" onClick={()=>value.handleDetail(id)}/>
                                     </Link>
-                                    <button className="fa-cart mt-2" disabled={inCart? true: false} onClick={()=>value.handleCart(id)}>
+                                    
+                                {/* </div> */}
+                                <div className="pt-3 pl-2 text-left">
+                                    <h4>{name}</h4>
+                                    <p>{short}</p>
+                                    <h4>Rs: {price}</h4>
+                                </div>
+                                <button className="fa-cart" disabled={inCart? true: false} onClick={()=>value.handleCart(id)}>
                                         {inCart?(<i className="fa fa-cart-arrow-down"/>): (<i className="fa fa-cart-plus"></i>)}
-                                    </button>
-                                </div>
-                                <div className="card-footer">
-                                    <h2>{name}</h2>
-                                </div>
+                                </button>
                             </div>)}
                     </ProductConsumer>
                 </div>

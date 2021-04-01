@@ -13,7 +13,7 @@ class ProductProvider extends React.Component{
             Cart : [],
             cartSubTotal: 0,
             cartTax: 0,
-            cartTotal: 0
+            cartTotal: 0,
         }
     }
 
@@ -104,7 +104,7 @@ class ProductProvider extends React.Component{
         this.setState(()=>{
             return {
                 Cart: [...tempCart],
-                productsData: [...tempProduct]
+                productsData: [...tempProduct],
             } 
         },()=>this.addTotal())
 

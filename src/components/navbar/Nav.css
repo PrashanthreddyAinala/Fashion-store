@@ -8,17 +8,15 @@
 }
 
 .link2 p {
-  margin: 1px;
-  padding: 10px;
-  border: 2px solid var(--light-red);
-  color: var(--light-red);
+  margin-top: 1rem;
+  color: var(--white);
   border-radius: 5px;
-  background-color: var(--dark-red);
+  font-size: xx-large;
+  margin-right: 1rem;
 }
 
 .link2 p:hover {
-  color: var(--hover-red);
-  border: 2px solid var(--hover-red);
+  color: var(--white);
 }
 
 .cart {
