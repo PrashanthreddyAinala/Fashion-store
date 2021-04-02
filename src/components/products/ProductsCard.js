@@ -19,9 +19,9 @@ class ProductsCard extends React.Component{
                                     
                                 {/* </div> */}
                                 <div className="pt-3 pl-2 text-left">
-                                    <h4>{name}</h4>
+                                    <h5>{name}</h5>
                                     <p>{short}</p>
-                                    <h4>Rs: {price}</h4>
+                                    <h6>Rs: {price}</h6>
                                 </div>
                                 <button className="fa-cart" disabled={inCart? true: false} onClick={()=>{value.handleCart(id)}}>
                                         {inCart?(<p className="disable">In Cart</p>): (<p className="enable">Add to Cart</p>)}

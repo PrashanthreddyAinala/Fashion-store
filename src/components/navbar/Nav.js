@@ -12,7 +12,7 @@ class NavBar extends React.Component{
                     <div className="navbar bg-danger p-3">
                     <div>
                         <NavLink to="/" className="link1">
-                            <h3>Fashion Store</h3>
+                            <h3>Fashion Palace</h3>
                         </NavLink>
                     </div>
                     <div className="cart">

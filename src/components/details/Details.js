@@ -21,9 +21,9 @@ class Details extends React.Component{
                                     <h1>{name}</h1>
                                     <h5>{short}</h5>
                                     <hr />
-                                    <h2>Rs. {price}</h2>
+                                    <h3>Rs. {price}</h3>
                                     <p className="tax">inclusive of all taxes</p>
-                                    <h3>PRODUCT DETAILS</h3>
+                                    <h4>PRODUCT DETAILS</h4>
                                     <p>{desc}</p>
                                     <button className="secondry" disabled={inCart? true: false} onClick={()=> value.handleCart(id)}>{inCart? "Item In Cart": "Add to Cart"}</button>
                                     <Link to="/">
