@@ -22,14 +22,21 @@
 }
 
 .fa-cart {
-  margin-left: 13.4rem;
-  padding: 5px 12px;
-  font-size: large;
-  background-color: #93c5fd;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem 0rem;
   border: none;
-  border-radius: 2px;
+  background-color: #93c5fd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   transform: translate(100%, 100%);
-  transition: all 0.3s linear;
+  transition: all 1s vertical;
+}
+
+.fa-cart .enable {
+  color: white;
+}
+.fa-cart .disable {
+  padding: 0rem 1.1rem;
 }
 
 .card:hover .fa-cart {
@@ -42,16 +49,11 @@
 }
 
 .fa-cart:hover {
-  background-color: var(--dark-blue);
   cursor: pointer;
 }
 
 @media (max-width: 450px) {
   .fa-cart {
-    margin-left: 13rem;
     transform: translate(0, 0);
-    margin-left: 7.3rem;
-    font-size: small;
-    padding: 4px 10px;
   }
 }

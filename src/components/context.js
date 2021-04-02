@@ -14,9 +14,11 @@ class ProductProvider extends React.Component{
             cartSubTotal: 0,
             cartTax: 0,
             cartTotal: 0,
+            counter: 0
         }
     }
 
+    // assigning data
     componentDidMount() {
         this.setData();
     }
@@ -32,10 +34,12 @@ class ProductProvider extends React.Component{
         })
     }
 
+    // getting exact item
     getProduct = (id) => {
         const product = this.state.productsData.find(item => item.id === id);
         return product;
     }
+
 
     handleDetail = (id) => {
         const data = this.getProduct(id);
@@ -44,6 +48,7 @@ class ProductProvider extends React.Component{
         })
     }
 
+    // handling cart data
     handleCart = (id) => {
         const tempProduct = [...this.state.productsData];
         const index = tempProduct.indexOf(this.getProduct(id));
@@ -52,6 +57,7 @@ class ProductProvider extends React.Component{
         item.count = 1;
         const price = item.price;
         item.total = price;
+        this.incCounter()
         this.setState(()=>{
             return { productsData: tempProduct, Cart: [...this.state.Cart, item]}
         }, ()=>this.addTotal());
@@ -81,7 +87,8 @@ class ProductProvider extends React.Component{
 
         product.count = product.count-1;
         if(product.count===0) {
-            this.removeItem(id)
+            this.removeItem(id);
+            this.descCounter()
         }
         else{
             product.total = product.count * product.price;
@@ -101,15 +108,29 @@ class ProductProvider extends React.Component{
         removedItem.inCart= false;
         removedItem.count = 0;
         removedItem.total = 0;
+        this.descCounter()
         this.setState(()=>{
             return {
                 Cart: [...tempCart],
                 productsData: [...tempProduct],
             } 
-        },()=>this.addTotal())
-
+        },()=>{this.addTotal()})
     }
 
+    //cart counter 
+    incCounter = () => {
+        this.setState({counter : this.state.counter + 1})
+    }
+
+    descCounter = () => {
+        this.setState({counter : this.state.counter - 1})
+    }
+
+    deleteCounter = () => {
+        this.setState({counter : 0})
+    }
+
+    // calculating total
     addTotal = () => {
         let subtotal = 0;
         this.state.Cart.map(item=>(subtotal += item.total));
@@ -120,12 +141,14 @@ class ProductProvider extends React.Component{
             return {
                 cartSubTotal: subtotal,
                 cartTax: tax,
-                cartTotal: total
+                cartTotal: total,
             }
         })
     }
 
+    // clear cart
     clearCart= () => {
+        this.deleteCounter()
         this.setState(()=>{
             return {Cart : []}
         }, ()=>{
@@ -142,7 +165,7 @@ class ProductProvider extends React.Component{
             clearCart: this.clearCart,
             increment: this.increment,
             decrement: this.decrement,
-            removeItem: this.removeItem,
+            removeItem: this.removeItem
             }}>
                 {this.props.children}
             </ProductContext.Provider>

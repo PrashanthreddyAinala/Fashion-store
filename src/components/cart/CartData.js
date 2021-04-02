@@ -12,7 +12,7 @@ class CartData extends React.Component {
                         <h3>{name}</h3>
                         <h3>Rs. {price}</h3>
                         <h3><button onClick={()=>value.decrement(id)}>-</button>{count}<button onClick={()=>value.increment(id)}>+</button></h3>
-                        <h3><button className="delete" onClick={()=>value.removeItem(id)}><i className="fa fa-trash"/></button></h3>
+                        <h3><button className="delete" onClick={()=>{value.removeItem(id)}}><i className="fa fa-trash"/></button></h3>
                         <h3>Rs. {total}</h3>
                     </div>
                 )}

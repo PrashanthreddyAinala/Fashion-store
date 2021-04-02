@@ -32,3 +32,14 @@
 .link2:hover {
   text-decoration: none;
 }
+
+.counter {
+  color: black;
+  font-size: 0.8rem;
+  position: absolute;
+  margin-top: 5px;
+  padding: 0px 2px;
+  background-color: var(--white);
+  border-radius: 50%;
+  font-weight: bold;
+}
